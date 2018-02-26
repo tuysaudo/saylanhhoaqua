@@ -64,3 +64,10 @@
 		line-height: 2.3rem;
 	}
 }
+
+
+.search{display:block; position:absolute; top:100%; right:0; width:300px; background-color: $white; padding:10px;}
+.search form{ position: relative; }
+.search input{outline:none; border:1px solid #e5e5e5; padding:5px 10px; line-height: 25px; }
+.search input[type=text]{width:100%; padding-left:30px; border-radius:20px; }
+.search input[type=submit]{position:absolute; top:0; right:0; background:none; font-family:'FontAwesome'; font-size:18px; color:$black; border:none; padding:5px 15px}

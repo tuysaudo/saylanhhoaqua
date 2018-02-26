@@ -1,0 +1,12 @@
+#revslider .tp-banner ul li .tp-caption {
+  border: none;
+  background: none;
+  width: auto;
+  max-width: 90rem;
+  height: auto;
+  padding: 1.5rem !important;
+  font-size: 4rem !important;
+  line-height: 4.5rem !important;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+/*# sourceMappingURL=slides.css.map */
