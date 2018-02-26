@@ -5,7 +5,9 @@
         padding: 0;
     }
     img{
+        @extend %transition;
         width: 100%;
+        border: 2px solid transparent;
     }
     h4{
         padding: 2rem 0;
@@ -14,5 +16,13 @@
         line-height: 2.2rem;
         text-transform: uppercase;
         @extend %transition;
+    }
+    &:hover{
+        img{
+            border-color: $color-primary;
+        }
+        h4{
+            color: $color-primary;
+        }
     }
 }

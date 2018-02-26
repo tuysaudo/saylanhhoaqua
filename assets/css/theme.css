@@ -1,7 +1,7 @@
 /* 13px */
 /* 2px */
 /* Font Icon */
-input, textarea, select, button, .button, .product-item-i h4, .widget_socials a, .icon-search, .item-cat h3, .post-item-i.home h4 {
+input, textarea, select, button, .button, .product-item-i img, .product-item-i h4, .widget_socials a, .icon-search, .item-cat h3, .post-item-i.home h4 {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -1249,13 +1249,18 @@ Coming Soon
   .product-item-i.home {
     padding: 0; }
   .product-item-i img {
-    width: 100%; }
+    width: 100%;
+    border: 2px solid transparent; }
   .product-item-i h4 {
-    padding: 25px 0;
+    padding: 2rem 0;
     text-align: center;
     font-size: 1.6rem;
     line-height: 2.2rem;
     text-transform: uppercase; }
+  .product-item-i:hover img {
+    border-color: #7ebc04; }
+  .product-item-i:hover h4 {
+    color: #7ebc04; }
 
 .header {
   padding: 2rem 0; }
@@ -1384,6 +1389,9 @@ Coming Soon
     text-transform: uppercase; }
   .post-item-i.home:hover h4 {
     background-color: rgba(0, 0, 0, 0.85); }
+
+.st-products {
+  margin-bottom: 4rem; }
 
 #revslider .tp-banner ul li .tp-caption {
   border: none;
