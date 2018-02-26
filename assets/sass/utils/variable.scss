@@ -1,0 +1,72 @@
+// Typhograph
+$font-size: 1.3rem; /* 13px */
+$font-body:   'Roboto', sans-serif;
+$font-body2:  'Roboto', serif;
+$font-body3:  'Roboto', serif;
+
+$line-height : 2rem; /* 2px */
+/* Font Icon */
+$iconfont: 'IcoFont';
+$fontawesome: 'FontAwesome';
+$material: 'Material-Design-Iconic-Font';
+$themify: 'themify';
+$elusive: 'Elusive-Icons';
+
+// Define
+$top : 0;
+$right : 0;
+$bottom :0;
+$left : 0;
+$margin : 0;
+$padding : 0;
+
+/// Colors
+
+$color-default: #333; //default text color
+
+$color-primary:       #86bc42;
+$color-secondary:     red;
+$color-rating:			#ffc02a;
+
+$blue:  		#6495ED;
+$green: 		#51D66B;
+
+$white:         #fff;
+$gray-light:    #e5e5e5;
+$whisper:		#eee;
+$silver: 		#bbb;
+$gray:          #999;
+$gray-dark:     #333;
+$black:         #000;
+$gray80:        #ccc;
+$gray95:        #f2f2f2;
+$gray98:        #fafafa;
+$gray99:        #fcfcfc;
+
+$red : 			#E8001E;
+$red-hover: 	#C7D867;
+
+$gray: 			#686875;
+
+$color-success: green;
+$color-warning: orange;
+$color-alert:   red;
+
+%transition{
+	-webkit-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+			-o-transition: all .4s ease-in-out;
+				transition: all .4s ease-in-out;
+}
+
+%trs-bg{
+	-webkit-transition: color .3s ease-in-out, background .3s ease-in-out;
+	-o-transition: color .3s ease-in-out, background .3s ease-in-out;
+	transition: color .3s ease-in-out, background .3s ease-in-out;
+}
+
+%trs-op{
+	-webkit-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}

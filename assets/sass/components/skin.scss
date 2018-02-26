@@ -1,0 +1,320 @@
+
+/*
+Theme Common
+-------------------------------------*/
+#wrapper{
+    background-color: #f4efdc;
+}
+#site-content{
+    padding: 0 0 3rem;
+}
+#site-breadcrumb{
+    margin-bottom: 3.5rem;
+    padding-top: 2.5rem;
+    .page-header{
+        margin: 1rem 0 0;
+    }
+}
+.breadcrumbs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.4rem;
+        font-weight: 500;
+        &.separator{
+            color: #dfdfdf;
+        }
+        a{
+            color: $color-primary;
+            &:hover{
+                color: $color-secondary;
+            }
+        }
+    }
+}
+.page-header{
+    margin:0;
+    padding: 30px;
+    border: none;
+    background-color: $gray98;
+}
+.page-title{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+/*
+To Top
+----------------------------*/
+.to-top{
+    position: fixed;
+	bottom: 2rem;
+	@include right(2rem);
+	z-index: 9999;
+    @include translate(0, 2rem);
+    @include opacity(0);
+    @include transition(all 0.4s ease);
+    &.active{
+		@include translate(0, 0);
+		@include opacity(1);
+	}
+	a{
+		display:block;
+		width: 4.5rem;
+		height: 4.5rem;
+		font-size: 1.8rem;
+		line-height: 4rem;
+		color: $color-default;
+		background-color:$white;
+		border:2px solid $whisper;
+		@include transition(all 0.5s);
+		@extend .text-center;
+		&:before{
+			content:'\f2fc';
+			font-family: $material;
+			display:block;
+			font-size:3.6rem;
+		}
+		&:hover{
+			background-color: $color-default;
+			border-color: $color-default;
+			color: $white;
+		}
+	}
+}
+
+/*
+Comments
+----------------------------*/
+#comments{
+    h2{
+        font: {
+            size: 2rem;
+            weight: 300;
+        }
+        line-height: 2.4rem;
+        margin: 0 0 1rem;
+        b, strong{
+            font-weight: 700
+        }
+    }
+}
+.comments-area{
+    @extend .br-widget;
+    padding: 3rem;
+    ol{
+        list-style: none;
+        margin: 0;
+        &.children{
+            @include padding-left(2rem);
+        }
+        li{
+            article{
+                margin: 0 0 1.5rem;
+                padding: 0 0 1.5rem;
+                border-bottom: 1px solid $whisper;
+            }
+        }
+    }
+    .comment-header{
+        color: $gray80;
+        margin-bottom: .5rem;
+        cite{
+            font-style: normal;
+            color: $color-default;
+            &::after{
+                content:"|";
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 1rem;
+                color: $gray80;
+            }
+        }
+        .time-reply{
+            display: inline-block;
+            vertical-align: middle;
+            i{
+                @include margin-right(.4rem);
+            }
+        }
+    }
+    .comment-meta{
+        margin-bottom: 1rem;
+        a{
+            display: inline-block;
+            vertical-align: top;
+            color: #777;
+            @include margin-right(.4rem);
+        }
+    }
+    .comment-content{
+        color: #777;
+        ol{
+            list-style: decimal;
+        }
+        p{
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+}
+.comment-respond{
+    margin-top: 4rem;
+    max-width: 66.6667%;
+    h3{
+        font: {
+            size: 1.4rem;
+            weight: 700;
+        }
+        line-height: 2rem;
+        margin: 0 0 1rem;
+    }
+}
+
+/*
+Accordion
+----------------------------*/
+#accordion{
+    .panel{
+        @include box-shadow(none);
+        @extend .brr;
+        border: 1px solid $whisper;
+        >.panel-heading{
+            color: $color-default;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            .panel-title{
+                font: {
+                    size: 1.4rem;
+                    weight: 400;
+                }
+                line-height: 2rem;
+                a{
+                    display: block;
+                    padding:1rem 2rem;
+                    &:hover{
+                        color: $color-primary;
+                    }
+                }
+                a:not(.collapsed){
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+        }
+        .panel-body{
+            color: #777;
+            border: none;
+            @include padding(1.5rem, 2rem, 2rem, 4rem);
+            position: relative;
+            &:before{
+                content: '';
+                display: block;
+                width: 3rem;
+                height: 3px;
+                background-color: $color-primary;
+                position: absolute;
+                top: 0;
+                @include left(4rem);
+            }
+        }
+    }
+}
+
+
+/*
+Owl Carousel Custom
+----------------------------*/
+.owl-carousel {
+    margin-bottom: 3rem;
+}
+.owl-theme{
+    .owl-dots{
+        .owl-dot{
+            span{
+                width: .7rem;
+                height: .7rem;
+                margin: .5rem .3rem;
+                background: $silver;
+                @extend .trs; 
+            }
+            &.active{
+                span{
+                    width: 3rem;
+                    background: $color-primary;
+                }
+            }
+        }
+    }
+    .owl-nav{
+        margin-bottom: 1rem;
+        [class*=owl-]{
+            margin: 0 .3rem;
+            padding: 0;
+            width: 4rem;
+            height: 2.2rem;
+            background: $white;
+            color: $color-default;
+            border: 1px solid $whisper;
+            line-height: 2.2rem;
+            overflow: hidden;
+            text-indent: -9999px;
+            @extend .text-center;
+            position: relative;
+            &:before{
+                content: '';
+                font-family: $iconfont;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                line-height: 2rem;
+                font-size: 1.4rem;
+                text-indent: 0;
+            }
+            &:hover{
+                background: $color-primary;
+                border-color: $color-primary;
+                color: $white;
+            }
+        }
+        .owl-prev{
+            &:before{
+                content: '\eb76';
+            }
+        }
+        .owl-next{
+            &:before{
+                content: '\eb79';
+            }
+        }
+        .disabled{
+            cursor: not-allowed;
+            @include opacity(1);
+        }
+    }
+}
+.topnav-visible{
+    margin-top: 5rem;
+    .owl-dots{
+        margin-top: 1rem;
+    }
+    .owl-nav{
+        position: absolute;
+        top:  -4rem;
+        @include left(1.2rem);
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Drag Slider UI

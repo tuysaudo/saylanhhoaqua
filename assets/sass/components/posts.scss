@@ -1,0 +1,132 @@
+.entry-meta{
+    margin: 0 0 2rem;
+    .meta {
+        display: inline-block;
+        vertical-align: bottom;
+        color: $gray80;
+        &::after{
+            content:"|";
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0 1rem;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        a{
+            color: inherit;
+            font: {
+                size: inherit;
+                weight: 400;
+            }
+        }
+        i{
+            font-style: normal;
+            @include margin-right(.5rem);
+        }
+        &.posted-by{
+            img, b{
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            img{
+                width: 32px;
+                @include border-radius(50%);
+                @include margin-right(1.5rem);
+            }
+            b{
+                font-weight: 400;
+                color: $color-default;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+        &.posted-in{
+            a{
+                color: $color-primary;
+                &:after{
+                    content: ',';
+                    display: inline-block;
+                    vertical-align: bottom;
+                    @include margin-right(0.3rem);
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.post-wrapper{
+    margin: 0 0 5rem;
+    .entry-title{
+        font: {
+            size: 3rem;
+        }
+        line-height: 3.6rem;
+        margin-bottom: 2rem;
+    }
+    
+    .post-thumbnail{
+        position: relative;
+        margin-bottom: 2.5rem;
+    }
+    .visited{
+        position: absolute;
+        top: 2rem;
+        @include right(2rem);
+        background-color: $white;
+        padding: .25rem .3rem;
+        @extend .brr;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                color: $silver;
+                font-size: 1.4rem;
+                margin: 0 .6rem;
+                a{
+                    color: inherit;
+                }
+                i{
+                    @include margin-right(0.4rem);
+                }
+            }
+        }
+    }
+    .entry-summary, .entry-content{
+        font-size: 1.4rem;
+        color: #777777;
+        padding: 0 0 1.5rem;
+        margin: 0 0 1.5rem;
+        border-bottom: 2px solid $whisper;
+        p{
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+    .read-more{
+        a{
+            padding: 1rem 2.5rem;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+    .entry-content{
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+}

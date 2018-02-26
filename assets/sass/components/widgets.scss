@@ -1,0 +1,258 @@
+.widget{
+    margin: 0 0 3.5rem;
+    a{
+        &:hover{
+            color: $color-primary;
+        }
+    }
+    ul, ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @extend .clearfix;
+        li{
+            margin: 0 0 1rem;
+            .count{
+                @include margin-left(5px);
+            }
+        }
+    }
+}
+.widgettitle{
+    font: {
+        size: 2rem;
+        weight: 300;
+        family: $font-body2;
+    }
+    line-height: 2.6rem;
+    margin: 0 0 1rem;
+    text-transform: capitalize;
+    b, strong{
+        font-weight: 700;
+    }
+}
+.widget{
+    &:not(.widget_tags){
+        ul{
+           @extend .br-widget;
+        }
+    }
+    &.widget_categories{
+        ul{
+            li{
+                width: 50%;
+                @extend .float-left;
+                &:nth-child(2n+1){
+                    clear: both;
+                }
+            }
+        }
+    }// End .widget_categories
+    &.widget_entries{
+        ul{
+            padding:.5rem 2.5rem;
+            li{
+                margin: 0;
+                padding: 1.5rem 0;
+                border-bottom: 1px solid $whisper;
+                &:last-child{
+                    border-bottom: none;
+                }
+                a{
+                    font: {
+                        size: 1.4rem;
+                        weight: 700;
+                    }
+                }
+                .box-metas{
+                    margin-top: 1rem;
+                }
+                .meta {
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: $gray80;
+                    &::after{
+                        content:"|";
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin: 0 1rem;
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    a{
+                        color: inherit;
+                        font: {
+                            size: inherit;
+                            weight: 400;
+                        }
+                    }
+                    i{
+                        @include margin-right(.5rem);
+                    }
+                }
+                .posted-by{
+                    img, b{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    img{
+                        width: 32px;
+                        @include border-radius(50%);
+                        @include margin-right(1.5rem);
+                    }
+                    b{
+                        font-weight: 400;
+                        color: $color-primary;
+                        &:hover{
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }// End .widget_entries
+
+    &.widget_tags{
+        a{
+            display: inline-block;
+            @include margin(0, .5rem, .5rem, 0);
+            padding: .4rem 1.5rem;
+            border: 2px solid $whisper;
+            @extend .brr;
+            &:hover{
+                color: $color-default;
+                border-color: $color-primary;
+            }
+        }
+    }// End .widget_tags
+
+    &.widget_filter_price{
+        fieldset{
+            @extend .br-widget;
+            padding: 3rem 2rem 5rem;
+            margin-bottom: 1rem;
+        }
+        .ui-widget.ui-widget-content{
+            height: 4px;
+            border: none;
+            background: $whisper;
+        }
+        .ui-slider .ui-slider-handle{
+            height: 1.2rem;
+            width: 1.2rem;
+            @include border-radius(50%);
+            background: $color-primary;
+            border: none;
+            outline: none;
+            &:hover, &:focus{
+                outline: none;
+            }
+            span{
+                position: absolute;
+                top: 2.5rem;
+                left: 0;
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+        }
+        .ui-slider-horizontal .ui-slider-range{
+            background: $color-primary;
+        }
+    }// End .widget_filter_price
+    &.widget_product_category{
+        .widgettitle{
+            background-color: $color-primary;
+            font: {
+                size: 1.3rem;
+                weight: 700;
+            }
+            line-height: 1.8rem;
+            margin: 0;
+            padding: 1.5rem;
+            text-transform: uppercase;
+            color: $white;
+            @include border-radius-2(.3rem, .3rem, 0, 0);
+            &::before{
+                content: '\f080';
+                font-family: $iconfont;
+                @include margin-right(.5rem);
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            @include border-radius-2(0, 0, .3rem, .3rem);
+            li{
+                margin: 0;
+                border-bottom: 1px solid $whisper;
+                &:last-child{
+                    border: none;
+                }
+                a{
+                    display: block;
+                    padding:1rem 1.5rem;
+                    font-weight: 500;
+                    position: relative;
+                    i{
+                        font-size: 1.8rem;
+                        color: #ddd;
+                    }
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        @include right(0);
+                        width: .4rem;
+                        height: 0;
+                        background-color: transparent;
+                        @extend .trs;
+                    }
+                    &:hover{
+                        color: $color-primary;
+                        i{
+                            color: $color-primary;
+                        }
+                        &:after{
+                            height: 100%;
+                            background-color: $color-primary;
+                        }
+                    }
+                }
+                &.nocat{
+                    a{
+                        background-color: $gray98;
+                    }
+                   
+                }
+            }
+        }
+    }// End .widget_product_category
+    &.widget_compare{
+        ul{
+            li{
+                position: relative;
+                @include padding-right(2.5rem);
+                .name{
+                    a{
+                        font-weight: 500;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+                .remove{
+                    position: absolute;
+                    top: .5rem;
+                    @include right(0);
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }// End .widget_compare
+}

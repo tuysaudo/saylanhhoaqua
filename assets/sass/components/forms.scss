@@ -1,0 +1,113 @@
+form{
+    margin: 0;
+}
+
+input, textarea, select, button, .button{
+    display: block;
+    outline: none;
+    border: 1px solid $whisper;
+    @extend .brr;
+    margin: 0;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: $color-default;
+    width: 100%;
+    max-width: 100%;
+    @extend %transition;
+    &:hover, &:focus{
+        outline: none;
+    }
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $silver;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $silver;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: $silver;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $silver;
+    }
+}
+textarea{
+    min-height: 100px;
+}
+.button, button, input[type=submit]{
+    display: inline-block;
+    width: auto;
+    background-color: $color-primary;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.2rem 2.5rem;
+    cursor: pointer;
+    &:hover{
+        color: $white;
+        background-color: $color-default;
+    }
+}
+
+/* Search Form */
+.form-search{
+    position: relative;
+    @include padding-right(85px);
+    .button, button, input[type=submit]{
+        position: absolute;
+        top: 0;
+        @include right(0);
+    }
+}
+
+/* Comments Form */
+.comment-form{
+    p{
+        margin: 0 0 .5rem;
+        padding: 0;
+        position: relative;
+        @extend .clearfix;
+    }
+    label{
+        font-weight: 400;
+        position: absolute;
+        top: 0;
+        @include left(1.2rem);
+        color: $silver;
+        font-size: 1.3rem;
+        line-height: 4rem;
+        margin: 0;
+        padding: 0;
+        i{
+            color: inherit;
+            line-height: inherit;
+        }
+    }
+    input[type=text],
+    input[type=email],
+    textarea{
+        @include padding(1.2rem, 1.2rem, 1.2rem, 3rem);
+    }
+    input[type=submit]{
+        margin-top: 1rem;
+        @extend .float-right;
+        padding: 1.2rem 2.5rem;
+    }
+}
+
+//Remind
+.form-remind{
+    display: flex;
+    @extend .comment-form;
+    .form-email{
+        flex-grow: 1;
+    }
+    .form-submit{
+        max-width: 13rem;
+        @include padding-left(1rem);
+        input{
+            margin: 0;
+        }
+    }
+
+}

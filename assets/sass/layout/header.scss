@@ -1,0 +1,13 @@
+.header {
+	padding: 2rem 0;
+}
+.logo-wrapper{
+	@extend .text-center;
+	.logo-inside{
+		display : inline-block;
+		max-width: 15rem;
+		a{
+			display: block;
+		}
+	}
+}

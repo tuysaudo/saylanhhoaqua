@@ -1,0 +1,324 @@
+/*
+About Us
+----------------------------*/
+
+.st-row{
+    margin-bottom: 3rem;
+}
+.site-title{
+    @extend .widgettitle;
+    &:after{
+        content: '';
+        display: block;
+        width: 5.8rem;
+        height: .8rem;
+        background: url(../images/other/site-title-line.png) center center no-repeat;
+        margin: 1.5rem auto 2.5rem;
+    }
+}
+.box-text{
+    @extend .text-center;
+    max-width: 66.666667%;
+    margin: 0 auto;
+}
+.box-quote{
+    .quote{
+        margin-top: 2rem;
+    }
+}
+.quote{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    i{
+        font-family: $font-body3;
+    }
+}
+//Banner
+.gr-banners{
+    .bn-col{
+        &:nth-child(2n+1){
+            @include padding-right(0.5rem);
+        }
+        &:nth-child(2n+2){
+            @include padding-left(0.5rem);
+        }
+    }
+    .single-image{
+        margin-bottom: 1rem;
+    }
+}
+
+/*
+Contact Us
+----------------------------*/
+.contact-info{
+    margin: 0 0 16rem
+}
+.bx-title{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom:2px solid $whisper;
+    color: $silver;
+    font-size: 1.2rem;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    h3{
+        font: {
+            size: 1.4rem;
+        }
+        line-height: 2rem;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+}
+.info{
+    .hotline{
+        font: {
+            size: 1.8rem;
+            weight: 700;
+        }
+        line-height: 2.4rem;
+        i, b{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        i{
+            font-size: 4.5rem;
+            line-height: 5rem;
+            @include margin-right(1rem);
+            color: $color-primary;
+        }
+    }
+    .address{
+        color: #777;
+    }
+    .email{
+        a{
+            color: $color-primary;
+        }
+    }
+}
+.social{
+    a{
+        display: inline-block;
+        vertical-align: middle;
+        @include margin-right(1rem);
+        color: #ddd;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        &.google-plus{
+            font-size: 2.4rem;
+        }
+        &:hover{
+            color: $black;
+        }
+    }
+}
+
+/*
+Services
+----------------------------*/
+.the-lookbooks{
+    margin-bottom: 3rem;
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray99;
+        @extend .text-center;
+        &:nth-child(2n){
+            flex-direction: row-reverse
+        }
+    }
+    .image, .text{
+        width: 50%;
+    }
+    .text{
+        padding: 0 7%;
+        
+        h3{
+            font-size: 1.4rem;
+            line-height: 2rem;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            &:after{
+                content: '';
+                display: inline-block;
+                width: 3rem;
+                height: .3rem;
+                background-color: #ddd;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                @include translateX(-50%);
+            }
+        }
+        .desc{
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+/*
+Term of Use
+----------------------------*/
+.header-term{
+    h3{
+        @extend .widgettitle;
+    }    
+    .entry-meta{
+        &:after{
+            content: '';
+            display: block;
+            width: 5.8rem;
+            height: .8rem;
+            background: url(../images/other/site-title-line.png) center center no-repeat;
+            margin: 1.5rem auto 2.5rem;
+        }
+    }
+}
+.term-content{
+    @extend .br-widget;
+    padding: 4rem 4rem 2.5rem;
+    line-height: 2.4rem;
+}
+.bx-color{
+    padding: 2rem 4rem;
+    background-color: $gray98;
+}
+
+/*
+Page 404
+----------------------------*/
+#site-content{
+    &.error404{
+        @extend .text-center;
+        padding:13rem 0;
+        i{
+            display: block;
+            font-size:4rem;
+            line-height:5rem;
+            margin-bottom:1rem;
+        }
+        h3{
+            font-size:3.8rem;
+            line-height:4rem;
+            margin-bottom:.5rem;
+        }
+        b{
+            display:block;
+            font-size:1.4rem;
+            margin-bottom:4rem;
+        }
+        p{
+            margin-bottom:1.5rem;
+        }
+        a{
+            i{
+                display: inline;
+                font-size: inherit;
+                line-height: inherit;
+                @include margin-right(.5rem);
+            }
+        }
+    }
+}
+
+/*
+Coming Soon
+----------------------------*/
+.timing{
+    div{
+        display: inline-block;
+        min-width: 7rem;
+        border: 2px solid $whisper;
+        @extend .brr;
+        padding:1rem 0.8rem;
+        margin: 0 2.2rem;
+        position: relative;
+        &:after{
+            content: ':';
+            display: block;
+            font: {
+                size: 3rem;
+                weight: 700;
+            }
+            position: absolute;
+            top: 0;
+            @include left(100%);
+            width: 5rem;
+            line-height: 7rem;
+            color: $gray80;
+        }
+        &.sec{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    b{
+        display: block;
+        font: {
+            size: 3rem;
+            weight: 700;
+        }
+        line-height: 3rem;
+        margin-bottom: .4rem;
+        color: $color-primary;
+    }
+    i{
+        font: {
+            size: 1.4rem;
+            style: normal;
+            weight: 700;
+        }
+        line-height: 1.4rem;
+    }
+}
+#site-content{
+    &.coming-page{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background:$white url(../images/other/layer-cs.png) center center no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend .text-center;
+        span{
+            display: block;
+            font-size:5rem;
+            line-height:6rem;
+            margin-bottom:1rem;
+            color: $color-primary;
+        }
+        h3{
+            font-size:3.8rem;
+            line-height:4rem;
+            margin-bottom:1.2rem;
+        }
+        h4{
+            margin: 6rem 0 .5rem;
+            font: {
+                size: 1.3rem;
+                weight: 700;
+            }
+            line-height: 1.8rem;
+        }
+        form{
+            display: inline-block;
+            max-width: 90%;
+        }
+    }
+}
+
+

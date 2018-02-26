@@ -1,0 +1,248 @@
+
+/*
+RESET
+--------------------------------------*/
+html, body{
+  height: 100%;
+}
+
+html {
+  @include box-sizing(border-box);
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+body {
+  color: $color-default;
+  font-size: $font-size;
+  font-family: $font-body;
+  line-height: $line-height;
+  background-color: $gray95;
+}
+
+//
+// Make all elements from the DOM inherit from the parent box-sizing
+// Since `*` has a specificity of 0, it does not override the `html` value
+// making all elements inheriting from the root box-sizing value
+// See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+//
+* ,  *::before, *::after {
+  @include box-sizing(inherit);
+}
+
+/// Anchor
+a {
+  color: $color-default;
+  text-decoration: none;
+  @extend %trs-bg;
+  &:hover, &:focus {
+    color: $red;
+    text-decoration: none;
+  }
+}
+
+/// Block elements
+p, pre, figure {
+  margin: 0 0 2rem 0;
+  &:empty {
+    display: none;
+  }
+}
+blockquote, .explanation {
+    display: block;
+    margin-bottom: 1rem;
+    @include margin-left(0);
+    @include padding-left(1rem);
+
+    font-weight: lighter;
+    font-style: normal;
+
+    @include border-left(0.5rem);
+    border-color: $color-primary;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: $gray-light;
+}
+img {
+  border: 0;
+}
+
+
+/// Table
+/// Unstyled table
+table {
+  margin-bottom: 1rem;
+
+  th {
+    font-weight: bold;
+    @extend .text-left;
+  }
+}
+  
+  /// Styled table
+.table {
+  width: 100%;
+  max-width: 100%;
+
+  td, th {
+    padding: 1rem;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  thead {
+    td, th {
+      border-bottom-width: 2px;
+    }
+  }
+
+  tbody, tfoot {
+    tr:last-child {
+      td, th {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  tfoot {
+    td,th {
+      border-top: 2px solid $gray-light;
+    }
+  }
+
+  caption {
+    padding: 0.75rem;
+    font-size: small;
+    color: $gray;
+  }
+}
+  
+  /// Lists
+ul, ol {
+  @extend p;
+  @include margin-left(1.6rem);
+  @include padding-left(0);
+  ul, ol{
+    margin-bottom: 1.5rem;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    &:first-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.no-bullet {
+  list-style: outside none none;
+  margin-left: 0;
+}
+dl {
+  @extend p;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  @include margin-left(0);
+}
+/*
+Typography
+--------------------------------------*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0 0 0.4rem 0;
+  padding: 0;
+  color: $color-default;
+  font-family: $font-body;
+  font-weight: 700;
+  // anchors in headings should remain like headings, not anchors
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+}
+h1, .h1 {
+  font-size: 3.4rem;
+  line-height: 4rem;
+}
+h2, .h2 {
+  font-size: 3.0rem;
+  line-height: 3.4rem;
+}
+h3, .h3 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+h4, .h4 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+h5, .h5 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+h6, .h6 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  display: block;
+}
+
+/// Text elements
+strong, b, .bold {
+  font-weight: bold;
+}
+em, dfn, i, .italic {
+  font-style: italic;
+}
+u, ins, .underline {
+  text-decoration: underline;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+sub, .subscribt {
+  font-size: small;
+  text-transform: subscribe;
+}
+sup, .superscript {
+  font-size: small;
+  text-transform: superscript;
+}
+del, s, .strike {
+  text-decoration: line-through;
+}
+small {
+  font-size: small;
+}
+mark {
+
+}
+
+img{
+  display: inline-block;
+  max-width: 100%;
+}
+
+.col-13{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width:20%;
+  @extend .float-left;
+}
