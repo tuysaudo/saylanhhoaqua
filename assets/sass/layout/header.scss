@@ -11,3 +11,56 @@
 		}
 	}
 }
+.header {
+	.col-1{
+		padding-top: 40px;
+	}
+	.col-3{
+		padding-top: 50px;
+	}
+}
+.widget_socials{
+	a{
+		display: inline-block;
+		background-color: #545454;
+		color: $white;
+		width: 3rem;
+		height: 3rem;
+		font-size: 1.5rem;
+		line-height: 3rem;
+		@extend .text-center;
+		@include border-radius(50%);
+		@include margin-right(5px);
+		@extend %transition;
+		i{
+			line-height: 3rem;
+		}
+		&:hover{
+			background-color: $color-primary;
+		}
+	}
+}
+.widget_lang, .widget_search{
+	@extend .float-right;
+	@include margin-left(15px);
+}
+.widget_lang{
+	a{
+		display: inline-block;
+		@include margin-left(2px);
+	}
+}
+.icon-search{
+	width: 3rem;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	font-size: 2rem;
+	cursor: pointer;
+	@extend %transition;
+	&:hover{
+		color: $color-primary;
+	}
+	i {
+		line-height: 2.3rem;
+	}
+}
