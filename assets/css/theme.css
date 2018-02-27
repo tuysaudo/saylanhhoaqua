@@ -404,7 +404,9 @@ Theme Common
   background-color: #fff; }
 
 #site-content {
-  padding: 0 0 3rem; }
+  padding: 3rem 0; }
+  #site-content.front-page {
+    padding-top: 0; }
 
 #site-breadcrumb {
   margin-bottom: 3.5rem;
@@ -1028,6 +1030,145 @@ Archive
     text-transform: uppercase; }
   .product-item-i:hover h4 {
     color: #FF9009; }
+
+.quantity {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0; }
+  .quantity .title {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 5px; }
+  .quantity .input-text, .quantity button {
+    font-weight: 900;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 0;
+    float: left;
+    margin-right: 0 !important;
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #000;
+    text-align: center; }
+  .quantity button {
+    width: 20px; }
+    .quantity button.minus {
+      border-right: none; }
+    .quantity button.plus {
+      border-left: none; }
+    .quantity button:hover {
+      color: #FF9009; }
+
+.add-to-cart {
+  display: inline-block;
+  margin-left: 40px; }
+  .add-to-cart a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 50px;
+    border-radius: 3px;
+    background-color: #ff3945;
+    color: #fff; }
+    .add-to-cart a i {
+      margin-right: 10px; }
+    .add-to-cart a:hover {
+      background-color: #FF9009; }
+
+.product-info h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0 0 10px; }
+.product-info .meta {
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  padding-bottom: 10px;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #eee; }
+  .product-info .meta li {
+    display: inline-block;
+    margin-right: 15px; }
+    .product-info .meta li b {
+      color: #FF9009; }
+
+.product-meta ul {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0 15px; }
+.product-meta .price {
+  margin: 0 0 25px; }
+  .product-meta .price span {
+    font-size: 19px;
+    line-height: 24px;
+    color: #ff3425; }
+  .product-meta .price i {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    margin-left: 20px; }
+.product-meta .short-description {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-left: 20px; }
+  .product-meta .short-description li {
+    margin-bottom: 10px; }
+
+.product-labels section {
+  padding: 10px 15px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 18px; }
+.product-labels .commit ul li {
+  position: relative;
+  margin-bottom: 10px; }
+  .product-labels .commit ul li:last-child {
+    margin-bottom: 0; }
+.product-labels .contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .product-labels .contact ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px; }
+    .product-labels .contact ul li.phone i {
+      line-height: 30px; }
+    .product-labels .contact ul li.email {
+      line-height: 20px; }
+  .product-labels .contact ul i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    font-size: 20px; }
+  .product-labels .contact ul b, .product-labels .contact ul em {
+    display: block; }
+  .product-labels .contact ul em {
+    font-size: 11px; }
+.product-labels .buttons {
+  position: relative;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
+  padding-right: 70px; }
+  .product-labels .buttons button {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 9px;
+    color: #fff;
+    background-color: #FF9009;
+    border-color: #FF9009; }
+    .product-labels .buttons button:hover {
+      background-color: #333;
+      border-color: #333; }
 
 #site-header {
   background-color: #118C4E; }

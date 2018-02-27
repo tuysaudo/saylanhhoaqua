@@ -6,7 +6,10 @@ Theme Common
     background-color: $white;
 }
 #site-content{
-    padding: 0 0 3rem;
+    padding: 3rem 0;
+    &.front-page{
+        padding-top:0;
+    }
 }
 #site-breadcrumb{
     margin-bottom: 3.5rem;
