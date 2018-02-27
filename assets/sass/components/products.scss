@@ -234,6 +234,9 @@
                     padding: 3px;
                     border: 1px solid $whisper;
                     cursor: pointer;
+                    &.active{
+                        border-color: $color-third;
+                    }
                 }
             }
         }
