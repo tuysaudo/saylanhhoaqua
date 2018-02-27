@@ -1170,6 +1170,41 @@ Archive
       background-color: #333;
       border-color: #333; }
 
+.product-view {
+  min-height: 400px; }
+
+.product-image .images {
+  position: relative;
+  padding-left: 12rem; }
+  .product-image .images .thumbImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 400px;
+    overflow: hidden;
+    list-style: none; }
+    .product-image .images .thumbImages li {
+      display: block;
+      margin-bottom: 10px; }
+      .product-image .images .thumbImages li img {
+        padding: 3px;
+        border: 1px solid #eee;
+        cursor: pointer; }
+
+.single-product-content {
+  margin-top: 20px; }
+  .single-product-content .bxTitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .single-product-content .entry-content {
+    padding: 25px;
+    background-color: #f4efdc; }
+
 #site-header {
   background-color: #118C4E; }
 

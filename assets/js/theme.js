@@ -123,7 +123,14 @@
 			});
 		}
     });
-	
+
+	$('.thumbImages li:first-child img').addClass("active");
+    $('.thumbImages li img').click(function() {
+        $('.thumbImages li img').removeClass('active');
+        $(this).addClass('active');
+        var img_src = $(this).attr('data-src');
+        $('#indexImage').attr('src', img_src);
+    });
 	/*To Top*/
 	$(".to-top").removeClass('active');
 	/* fade in #back-top */

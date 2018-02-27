@@ -209,3 +209,45 @@
         }
     }
 }
+.product-view{
+    min-height: 400px;
+}
+.product-image{
+    .images{
+        position: relative;
+        padding-left: 12rem;
+        .thumbImages{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            margin:0;
+            padding:0;
+            width: 90px;
+            height: 400px;
+            overflow: hidden;
+            list-style: none;
+            li{
+                display: block;
+                margin-bottom: 10px;
+                img{
+                    padding: 3px;
+                    border: 1px solid $whisper;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.single-product-content{
+    margin-top: 20px;
+    .bxTitle{
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .entry-content{
+        padding: 25px;
+        background-color: #f4efdc;
+    }
+}
