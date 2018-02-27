@@ -43,6 +43,7 @@
 .widget_lang, .widget_search{
 	@extend .float-right;
 	@include margin-left(15px);
+	position: relative;
 }
 .widget_lang{
 	a{
@@ -66,7 +67,7 @@
 }
 
 
-.search{display:block; position:absolute; top:100%; right:0; width:300px; background-color: $white; padding:10px;}
+.search{display:block; position:absolute; top:100%; right:0; width:300px; background-color: $white; padding:10px; margin-top: 10px}
 .search form{ position: relative; }
 .search input{outline:none; border:1px solid #e5e5e5; padding:5px 10px; line-height: 25px; }
 .search input[type=text]{width:100%; padding-left:30px; border-radius:20px; }

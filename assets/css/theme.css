@@ -305,7 +305,7 @@ img {
 
 .navigation ul li a {
   display: block;
-  padding: 15px 55px 30px;
+  padding: 15px 30px 20px;
   font-size: 19px;
   font-weight: 700;
   text-transform: uppercase; }
@@ -757,13 +757,17 @@ textarea {
   .comment-form label i, .form-remind label i {
     color: inherit;
     line-height: inherit; }
-.comment-form input[type=text], .form-remind input[type=text], .comment-form input[type=email], .form-remind input[type=email], .comment-form textarea, .form-remind textarea {
+.comment-form input[type=text], .form-remind input[type=text],
+.comment-form input[type=email],
+.form-remind input[type=email],
+.comment-form textarea,
+.form-remind textarea {
   padding: 1.2rem 1.2rem 1.2rem 3rem; }
-  .rtl .comment-form input[type=text], .rtl .form-remind input[type=text],
-  .rtl .comment-form input[type=email],
-  .rtl .form-remind input[type=email],
-  .rtl .comment-form textarea,
-  .rtl .form-remind textarea {
+  .rtl .comment-form input[type=text], .rtl .form-remind input[type=text], .rtl
+  .comment-form input[type=email], .rtl
+  .form-remind input[type=email], .rtl
+  .comment-form textarea, .rtl
+  .form-remind textarea {
     padding: 1.2rem 3rem 1.2rem 1.2rem; }
 .comment-form input[type=submit], .form-remind input[type=submit] {
   margin-top: 1rem;
@@ -1397,7 +1401,8 @@ Coming Soon
     background-color: #7ebc04; }
 
 .widget_lang, .widget_search {
-  margin-left: 15px; }
+  margin-left: 15px;
+  position: relative; }
   .rtl .widget_lang, .rtl .widget_search {
     margin-left: 0;
     margin-right: 15px; }
@@ -1427,7 +1432,8 @@ Coming Soon
   right: 0;
   width: 300px;
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 10px; }
 
 .search form {
   position: relative; }

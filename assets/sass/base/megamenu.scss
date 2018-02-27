@@ -1,7 +1,7 @@
 .navigation{ text-align: center; }
 .navigation ul{ margin: 0; padding: 0 }
 .navigation ul li{display:inline-block; position:relative}
-.navigation ul li a{display:block; padding:15px 55px 30px; font-size:19px; font-weight: 700; text-transform:uppercase;}
+.navigation ul li a{display:block; padding:15px 30px 20px; font-size:19px; font-weight: 700; text-transform:uppercase;}
 .navigation ul ul{position:absolute; top:100%; left:0; width:250px; z-index:100; background:#f4efdc; display:none}
 .navigation ul ul li{display:block; width:100%; text-align:left}
 .navigation ul ul li a{padding: 10px 20px; font-size: 14px; line-height: 22px; text-transform: none; font-weight: 400;}
