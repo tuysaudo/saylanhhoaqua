@@ -1,3 +1,6 @@
+#site-header{
+	background-color : $color-secondary;
+}
 .header {
 	padding: 2rem 0;
 }
@@ -13,7 +16,7 @@
 }
 .header {
 	.col-1{
-		padding-top: 40px;
+		padding-top: 35px;
 	}
 	.col-3{
 		padding-top: 50px;
@@ -24,16 +27,16 @@
 		display: inline-block;
 		background-color: #545454;
 		color: $white;
-		width: 3rem;
-		height: 3rem;
-		font-size: 1.5rem;
-		line-height: 3rem;
+		width: 4rem;
+		height: 4rem;
+		font-size: 1.8rem;
+		line-height: 4rem;
 		@extend .text-center;
 		@include border-radius(50%);
 		@include margin-right(5px);
 		@extend %transition;
 		i{
-			line-height: 3rem;
+			line-height: 4rem;
 		}
 		&:hover{
 			background-color: $color-primary;
@@ -58,6 +61,7 @@
 	font-size: 2rem;
 	cursor: pointer;
 	@extend %transition;
+	color: $white;
 	&:hover{
 		color: $color-primary;
 	}

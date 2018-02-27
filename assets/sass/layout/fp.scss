@@ -1,6 +1,11 @@
+
+.st-background{
+ 	padding: 30px 0;
+ 	background-color: #f4efdc;
+}
+
 .st-category{
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding: 30px 0;
 }
 .item-cat{
 	position: relative;
@@ -90,11 +95,11 @@
 }
 
 .st-products{
-	margin-bottom: 4rem;
+	padding-bottom: 1rem;
 }
 
 .st-feature{
-	margin-bottom: 80px;
+	padding-bottom: 10rem;
 	p{
 		margin: 0;
 		font-size: 15px;
@@ -178,6 +183,7 @@
 	}
 }
 .st-contact{
+	padding: 50px 0;
 	.st-info{
 		color: $white;
 		padding-right: 0;
@@ -250,7 +256,9 @@
 		color: $color-primary;
 	}
 }
-
+.st-videos{
+	padding-top: 60px;
+}
 .owl-large-videos{
 	.video-frame{
 		iframe{

@@ -3,7 +3,7 @@
 Theme Common
 -------------------------------------*/
 #wrapper{
-    background-color: #f4efdc;
+    background-color: $white;
 }
 #site-content{
     padding: 0 0 3rem;
@@ -19,14 +19,12 @@ Theme Common
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom:20px;
     li{
         display: inline-block;
         vertical-align: middle;
         font-size: 1.4rem;
         font-weight: 500;
-        &.separator{
-            color: #dfdfdf;
-        }
         a{
             color: $color-primary;
             &:hover{
@@ -105,7 +103,6 @@ Comments
     }
 }
 .comments-area{
-    @extend .br-widget;
     padding: 3rem;
     ol{
         list-style: none;
@@ -183,7 +180,6 @@ Accordion
 #accordion{
     .panel{
         @include box-shadow(none);
-        @extend .brr;
         border: 1px solid $whisper;
         >.panel-heading{
             color: $color-default;
@@ -317,4 +313,4 @@ Owl Carousel Custom
     }
 }
 
-// Drag Slider UI
+/* Drag Slider UI */ 
