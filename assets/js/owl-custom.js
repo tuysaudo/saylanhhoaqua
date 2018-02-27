@@ -88,7 +88,7 @@
         });
         $('.owl-brands').owlCarousel({
             loop: true,
-            nav: true,
+            nav: false,
             dots: false,
             mouseDrag: true,
             touchDrag: true,
@@ -129,7 +129,7 @@
 
         $('.owl-small-videos').owlCarousel({
             loop: true,
-            nav: true,
+            nav: false,
             dots: false,
             mouseDrag: true,
             touchDrag: true,
@@ -204,7 +204,7 @@
     .owlCarousel({
         items : slidesPerPage,
         dots: false,
-        nav: true,
+        nav: false,
         smartSpeed: 200,
         slideSpeed : 500,
         slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
