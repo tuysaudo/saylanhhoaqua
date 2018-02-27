@@ -19,6 +19,11 @@
 	}
 	.widget_socials{
 		margin-top: 30px;
+		a{
+			&:hover{
+				color:$white;
+			}
+		}
 	}
 }
 

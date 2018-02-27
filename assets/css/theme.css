@@ -1196,7 +1196,7 @@ Archive
         cursor: pointer; }
 
 .single-product-content {
-  margin-top: 20px; }
+  margin-top: 30px; }
   .single-product-content .bxTitle {
     font-size: 24px;
     text-transform: uppercase;
@@ -1204,6 +1204,13 @@ Archive
   .single-product-content .entry-content {
     padding: 25px;
     background-color: #f4efdc; }
+
+.related {
+  margin-top: 50px; }
+  .related h2 {
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left; }
 
 #site-header {
   background-color: #118C4E; }
@@ -1321,6 +1328,8 @@ Archive
     color: inherit; }
   .footer .widget_socials {
     margin-top: 30px; }
+    .footer .widget_socials a:hover {
+      color: #fff; }
 
 .widget_menu ul, .widget_recent_posts ul {
   margin: 0;

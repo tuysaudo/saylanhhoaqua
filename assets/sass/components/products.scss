@@ -240,7 +240,7 @@
     }
 }
 .single-product-content{
-    margin-top: 20px;
+    margin-top: 30px;
     .bxTitle{
         font-size: 24px;
         text-transform: uppercase;
@@ -249,5 +249,13 @@
     .entry-content{
         padding: 25px;
         background-color: #f4efdc;
+    }
+}
+.related{
+    margin-top: 50px;
+    h2{
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: left;
     }
 }
