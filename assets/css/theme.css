@@ -1203,7 +1203,8 @@ Archive
     margin-bottom: 15px; }
   .single-product-content .entry-content {
     padding: 25px;
-    background-color: #f4efdc; }
+    background-color: #118C4E;
+    color: #fff; }
 
 .related {
   margin-top: 50px; }
@@ -1364,7 +1365,10 @@ Archive
 
 .st-background {
   padding: 30px 0;
-  background-color: #f4efdc; }
+  background-color: #118C4E;
+  color: #fff; }
+  .st-background h1, .st-background h2, .st-background h3, .st-background h4 {
+    color: inherit; }
 
 .st-category {
   padding: 30px 0; }
