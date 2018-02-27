@@ -1014,7 +1014,7 @@ Archive
     padding: 0;
     padding: 5px;
     background-color: #fff;
-    border: 2px solid transparent; }
+    border: 2px solid #eee; }
     .product-item-i.home:hover {
       border-color: #FF9009; }
   .product-item-i img {
