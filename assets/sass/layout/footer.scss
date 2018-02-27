@@ -52,3 +52,16 @@
 	margin: 0;
 	text-align: center;
 }
+.widget_form_contact{
+	.form-group{
+		margin-bottom: 25px;
+	}
+
+	.form-control{
+		height: 40px;
+	}
+	.input-group-addon{
+		background-color: $white;
+		color: $color-primary;
+	}
+}
