@@ -159,6 +159,19 @@
 	.st-contact .form{
 		padding: 25px;
 	}
+	#revslider .tp-banner ul li .tp-caption,
+	#revslider .tparrows{
+		display: none;
+	}
+	.item-cat h3{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+	}
+	.product-item-i h4{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		padding: 1.5rem 0 .5rem;
+	}
 }
 @media screen and (max-width:320px){
 	.product-items{
