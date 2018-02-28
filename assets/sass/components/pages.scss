@@ -1,3 +1,11 @@
+
+.page-title{
+    font-size: 38px;
+    line-height:44px;
+    text-transform:uppercase;
+    margin-bottom:30px;
+}
+
 /*
 About Us
 ----------------------------*/
@@ -51,6 +59,14 @@ About Us
 /*
 Contact Us
 ----------------------------*/
+.contact-page{
+    .st-contact{
+        padding: 25px 0;
+    }
+    .page-title{
+        margin-bottom: 0;
+    }
+}
 .contact-info{
     margin: 0 0 16rem
 }
@@ -118,7 +134,11 @@ Contact Us
     }
 }
 
-
+.map{
+    iframe{
+        width:100%;
+    }
+}
 /*
 Page 404
 ----------------------------*/

@@ -32,5 +32,36 @@
     .entry-content{
         padding-bottom: 3rem;
         margin-bottom: 3rem;
+        color: #333;
+    }
+    &.single{
+        .post-thumbnail, .post-content{
+            width: 100%;
+            padding: 0 0 20px;
+        }
+        .post-thumbnail{
+            img{
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        h1{
+            &.entry-title{
+                font: {
+                    size: 2.2rem;
+                }
+                line-height: 2.8rem;
+            }
+        }
+    }
+}
+.post-related{
+    margin-top: 50px;
+    h2{
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 }
