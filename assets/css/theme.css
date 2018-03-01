@@ -881,17 +881,13 @@ textarea {
   .comment-form label i, .form-remind label i {
     color: inherit;
     line-height: inherit; }
-.comment-form input[type=text], .form-remind input[type=text],
-.comment-form input[type=email],
-.form-remind input[type=email],
-.comment-form textarea,
-.form-remind textarea {
+.comment-form input[type=text], .form-remind input[type=text], .comment-form input[type=email], .form-remind input[type=email], .comment-form textarea, .form-remind textarea {
   padding: 1.2rem 1.2rem 1.2rem 3rem; }
-  .rtl .comment-form input[type=text], .rtl .form-remind input[type=text], .rtl
-  .comment-form input[type=email], .rtl
-  .form-remind input[type=email], .rtl
-  .comment-form textarea, .rtl
-  .form-remind textarea {
+  .rtl .comment-form input[type=text], .rtl .form-remind input[type=text],
+  .rtl .comment-form input[type=email],
+  .rtl .form-remind input[type=email],
+  .rtl .comment-form textarea,
+  .rtl .form-remind textarea {
     padding: 1.2rem 3rem 1.2rem 1.2rem; }
 .comment-form input[type=submit], .form-remind input[type=submit] {
   margin-top: 1rem;
@@ -1471,7 +1467,7 @@ Archive
   font-size: 13px;
   line-height: 18px;
   padding: 40px 0;
-  background-color: #333;
+  background-color: #8c561f;
   color: #fff; }
   .footer a {
     color: inherit; }
@@ -1484,8 +1480,11 @@ Archive
     color: inherit; }
   .footer .widget_socials {
     margin-top: 30px; }
-    .footer .widget_socials a:hover {
-      color: #fff; }
+    .footer .widget_socials a {
+      background-color: #6a4117; }
+      .footer .widget_socials a:hover {
+        background-color: #333;
+        color: #fff; }
 
 .widget_menu ul, .widget_recent_posts ul {
   margin: 0;
@@ -1501,7 +1500,7 @@ Archive
     margin-bottom: 0; }
 
 .bottom-footer {
-  background-color: #646464;
+  background-color: #6a4117;
   color: #fff;
   padding: 15px 0; }
 

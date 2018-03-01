@@ -2,7 +2,7 @@
 	font-size: 13px;
 	line-height: 18px;
 	padding: 40px 0;
-	background-color: #333;
+	background-color: #8c561f;
 	color:$white;
 	a{
 		color: inherit;
@@ -20,7 +20,9 @@
 	.widget_socials{
 		margin-top: 30px;
 		a{
+			background-color: #6a4117;
 			&:hover{
+				background-color: #333;
 				color:$white;
 			}
 		}
@@ -48,7 +50,7 @@
 	}
 }
 .bottom-footer{
-	background-color: #646464;
+	background-color: #6a4117;
 	color: $white;
 	padding: 15px 0;
 }
