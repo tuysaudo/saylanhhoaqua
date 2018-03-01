@@ -832,7 +832,7 @@ input, textarea, select, button, .button {
 textarea {
   min-height: 100px; }
 
-.button, button, input[type=submit] {
+.button, button, input[type=submit], button[type=submit] {
   display: inline-block;
   width: auto;
   background-color: #FF9009;
@@ -841,7 +841,7 @@ textarea {
   font-weight: 700;
   padding: 1.2rem 2.5rem;
   cursor: pointer; }
-  .button:hover, button:hover, input[type=submit]:hover {
+  .button:hover, button:hover, input[type=submit]:hover, button[type=submit]:hover {
     color: #fff;
     background-color: #333; }
 
@@ -905,6 +905,13 @@ textarea {
       padding-right: 1rem; }
     .form-remind .form-submit input {
       margin: 0; }
+
+button[type=submit] {
+  background-color: #6a4117;
+  border-color: #6a4117; }
+  button[type=submit]:hover {
+    background-color: #333;
+    border-color: #333; }
 
 .widget {
   margin: 0 0 3.5rem; }
